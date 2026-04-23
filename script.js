@@ -1,5 +1,4 @@
 const TIMEZONE = "Europe/Berlin";
-const HAPPY_HOUR_END_HOUR = 12;
 const ROTATION_START = "2026-04-20"; // Montag = Start von Woche 1
 
 const FOUR_WEEK_SPECIALS = [
@@ -73,11 +72,9 @@ function getBerlinDateOnly(date = new Date()) {
   return new Date(Date.UTC(parts.year, parts.month - 1, parts.day));
 }
 
-function getCurrentWeekPlan() {
+function getRotationPlanForDate(dateObj) {
   const startDate = new Date(`${ROTATION_START}T00:00:00Z`);
-  const currentDate = getBerlinDateOnly();
-
-  const diffMs = currentDate - startDate;
+  const diffMs = dateObj - startDate;
   const diffDays = Math.floor(diffMs / 86400000);
   const diffWeeks = Math.floor(diffDays / 7);
 
@@ -85,24 +82,39 @@ function getCurrentWeekPlan() {
     return FOUR_WEEK_SPECIALS[0];
   }
 
-  const rotationIndex = diffWeeks % 4;
-  return FOUR_WEEK_SPECIALS[rotationIndex];
+  return FOUR_WEEK_SPECIALS[diffWeeks % 4];
 }
 
-function isHappyHourActive() {
+function getCurrentWeekPlan() {
+  return getRotationPlanForDate(getBerlinDateOnly());
+}
+
+// Samstag 10:00 bis Sonntag 09:59
+function areSpecialsVisible() {
   const now = getBerlinDateParts();
 
   return (
     (now.weekday === 6 && now.hour >= 10) ||
-    (now.weekday === 0 && now.hour < HAPPY_HOUR_END_HOUR)
+    (now.weekday === 0 && now.hour < 10)
   );
+}
+
+// Happy Hour nur Samstag 10:00 bis 23:59
+function isHappyHourActive() {
+  const now = getBerlinDateParts();
+  return now.weekday === 6 && now.hour >= 10;
+}
+
+// Cocktail des Abends Samstag 10:00 bis Sonntag 09:59
+function isCocktailOfTheEveningActive() {
+  return areSpecialsVisible();
 }
 
 function updateSpecialButtonVisibility() {
   const button = document.getElementById("special-button");
   if (!button) return;
 
-  button.style.display = isHappyHourActive() ? "inline-block" : "none";
+  button.style.display = areSpecialsVisible() ? "inline-block" : "none";
 }
 
 function restoreOriginalPrices(cards) {
@@ -129,9 +141,10 @@ function applyWeeklySpecials(cards) {
   clearDynamicSpecials(cards);
 
   const plan = getCurrentWeekPlan();
-  const happyHourActive = isHappyHourActive();
-
   if (!plan) return;
+
+  const happyHourActive = isHappyHourActive();
+  const cocktailOfEveningActive = isCocktailOfTheEveningActive();
 
   cards.forEach((card) => {
     const drinkId = card.dataset.drinkId;
@@ -145,7 +158,7 @@ function applyWeeklySpecials(cards) {
       card.classList.add("happy-hour");
     }
 
-    if (isCocktailOfTheEvening) {
+    if (cocktailOfEveningActive && isCocktailOfTheEvening) {
       card.classList.add("cocktail-abend");
 
       const priceEl = card.querySelector(".price");
