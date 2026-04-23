@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-92TT4V9LYB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-92TT4V9LYB');
+  </script>
+
+  <title>Roonburg Cocktailkarte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="logo-wrap">
+        <div class="logo-mark">
+          <img src="https://roonburg.de/media/default/assets/config/roonburg/images/roonburg-logo.png" alt="Roonburg Logo">
+        </div>
+      </div>
+
+      <div class="kicker">Cocktailkarte</div>
+      <h1 class="heading">Deine Drinks für lange Nächte</h1>
+      <p class="intro">
+        Zeit für einen Drink: Scrolle durch unsere Karte und finde deinen persönlichen Favoriten für heute Abend.
+        Von fruchtig-frisch bis herb-intensiv ist für jeden Geschmack das passende Glas dabei.
+      </p>
+    </section>
+
+    <nav class="category-nav">
+      <button class="category-btn active" data-category="all">Alle</button>
+      <button class="category-btn" data-category="PARTY-FAVORITES">PARTY FAVORITES</button>
+      <button class="category-btn" data-category="VACAY-VIBES">VACAY VIBES</button>
+      <button class="category-btn" data-category="FRESH-ZESTY">FRESH &amp; ZESTY</button>
+      <button class="category-btn" data-category="MAIN-CHARACTER-ENERGY">MAIN CHARACTER ENERGY</button>
+      <button class="category-btn" data-category="SPIRIT-FORWARD">SPIRIT FORWARD</button>
+      <button class="category-btn" data-category="ZERO-PROOF">ZERO PROOF (Virgin)</button>
+      <button id="special-button" class="category-btn btn-happy-hour" data-category="specials" style="display: none;">
+        Aktuelle Specials
+      </button>
+      <button class="category-btn btn-seasonal" data-category="Seasonal">Seasonal</button>
+    </nav>
+
+    <section class="list">
+      <article class="card active-display" data-category="FRESH-ZESTY" data-drink-id="whiskey-sour">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/whiskeySour_11zon.webp" alt="Whiskey Sour" />
+          <div class="card-body">
+            <h3 class="card-title">Whiskey Sour</h3>
+            <p class="card-note">Kräftiger Bourbon trifft auf frische Zitrone und feine Süße. Optional mit Eiweiß geschüttelt für eine besonders cremige Textur.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Whiskey</li>
+              <li>Zitronensaft</li>
+              <li>Eiweiß</li>
+              <li>Zuckersirup</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">enthält Ei</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="FRESH-ZESTY" data-drink-id="new-york-sour">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/NewYorkSour.JPG.webp" alt="New York Sour - Twist" />
+          <div class="card-body">
+            <h3 class="card-title">New York Sour - Twist</h3>
+            <p class="card-note">Der Klassiker mit Twist. Rotweinlikör für die geschmackliche Besonderheit.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Whiskey</li>
+              <li>Zitrone</li>
+              <li>Zucker</li>
+              <li>Rotweinapperitif</li>
+              <li>Optional ohne Eiweiß</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">enthält Ei</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="FRESH-ZESTY" data-drink-id="pisco-sour">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/PiscoSour.webp" alt="Pisco Sour" />
+          <div class="card-body">
+            <h3 class="card-title">Pisco Sour</h3>
+            <p class="card-note">Lateinamerikanisches Lebensgefühl. Cremig, frisch mit samtiger Schaumkrone.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Pisco (Traubenbrand)</li>
+              <li>Limettensaft</li>
+              <li>Zucker</li>
+              <li>Eiweiß</li>
+              <li>Bitters</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">enthält Ei</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="FRESH-ZESTY" data-drink-id="melon-sour">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/MelonSour.JPG.webp" alt="Melon Sour" />
+          <div class="card-body">
+            <h3 class="card-title">Melon Sour</h3>
+            <p class="card-note">Fruchtig-süßer Eyecatcher. Leuchtender Melonenlikör trifft auf spritzige Zitrone für ein erfrischendes Geschmackserlebnis.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Melonenlikör</li>
+              <li>Zitrone</li>
+              <li>Melonensirup</li>
+              <li>Orangensaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoffe</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="FRESH-ZESTY" data-drink-id="gin-fizz">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/GinFizz.JPG.webp" alt="Gin Fizz" />
+          <div class="card-body">
+            <h3 class="card-title">Gin Fizz</h3>
+            <p class="card-note">Leicht, prickelnd und extrem erfrischend. Wie eine Limonade für Erwachsene.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Gin</li>
+              <li>Zitrone</li>
+              <li>Zucker</li>
+              <li>Sprudel</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="mai-tai">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/MaiTai.JPG.webp" alt="Mai Tai" />
+          <div class="card-body">
+            <h3 class="card-title">Mai Tai</h3>
+            <p class="card-note">Kurzurlaub mit Wumms. Kräftiger Rum trifft auf Limette und Mandel. Schmeckt nach Strandbar und lässt die Hula-Kette von alleine tanzen.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>versch. Rumsorten</li>
+              <li>Limejuice</li>
+              <li>Mandelsirup</li>
+              <li>Ananassaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="zombie">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Zombie.webp" alt="Zombie" />
+          <div class="card-body">
+            <h3 class="card-title">Zombie</h3>
+            <p class="card-note">Ein hochprozentiges Tropen-Gewitter aus drei Sorten Rum und Ananas.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>versch. Rumsorten</li>
+              <li>Zitronensaft</li>
+              <li>Orangensaft</li>
+              <li>Ananassaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="SPIRIT-FORWARD" data-drink-id="negroni">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Negroni.JPG.webp" alt="Negroni" />
+          <div class="card-body">
+            <h3 class="card-title">Negroni</h3>
+            <p class="card-note">Flüssiges Charisma. Bitter, süß und so stark, dass du plötzlich fließend italienisch sprichst. Ein Drink für Kenner mit Kante.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Gin</li>
+              <li>Campari</li>
+              <li>Wermut</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Sulfite</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="SPIRIT-FORWARD" data-drink-id="martini">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Martini.JPG.webp" alt="Martini" />
+          <div class="card-body">
+            <h3 class="card-title">Martini</h3>
+            <p class="card-note">James Bond Vibes. Trocken, eiskalt, klar und sehr stark.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Gin</li>
+              <li>Wermut</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Sulfite</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="SPIRIT-FORWARD" data-drink-id="boulevardier">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Boulevadier.webp" alt="Boulevardier" />
+          <div class="card-body">
+            <h3 class="card-title">Boulevardier</h3>
+            <p class="card-note">Der Negroni für Whisky-Fans. Die dunkle, verführerische Seite des Klassikers.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Bourbon Whiskey</li>
+              <li>Wermut</li>
+              <li>Campari</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Sulfite</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="blue-lagoon">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/BlueLagoon.webp" alt="Blue Lagoon" />
+          <div class="card-body">
+            <h3 class="card-title">Blue Lagoon</h3>
+            <p class="card-note">Ozean im Glas. Vodka und Blue Curaçao treffen auf spritzige Zitrone. Fruchtig-frischer Eyecatcher mit Urlaubs-Vibe.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Blue Curaçao</li>
+              <li>Zitronensaft</li>
+              <li>Sprite</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="pina-colada">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Pinia_Colada.JPG.webp" alt="Pina Colada" />
+          <div class="card-body">
+            <h3 class="card-title">Pina Colada</h3>
+            <p class="card-note">Cremig, kokoslastig und süß. Ein flüssiges Dessert.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rum</li>
+              <li>Kokossirup</li>
+              <li>Sahne</li>
+              <li>Ananassaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Sahne (Milchprodukt)</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="frozen-daiquiri">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Daiquiris.webp" alt="Frozen Daiquiri Mango/ Erdbeere" />
+          <div class="card-body">
+            <h3 class="card-title">Frozen Daiquiri Mango/ Erdbeere</h3>
+            <p class="card-note">Wie ein alkoholisches Wassereis - Sommer HIT!</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rum</li>
+              <li>Fruchtpüree</li>
+              <li>Fruchtsirup</li>
+              <li>Limettensaft</li>
+              <li>Zitronensaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="bahama-mama">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/BahamaMama.webp" alt="Bahama Mama" />
+          <div class="card-body">
+            <h3 class="card-title">Bahama Mama</h3>
+            <p class="card-note">Mix aus Rum, Kokos und Ananas. Ein tropisches Erlebnis.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rum</li>
+              <li>Kokos</li>
+              <li>Grenadine</li>
+              <li>Zitronensaft</li>
+              <li>Ananassaft</li>
+              <li>Orangensaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="VACAY-VIBES" data-drink-id="solero">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Solero.webp" alt="Solero" />
+          <div class="card-body">
+            <h3 class="card-title">Solero</h3>
+            <p class="card-note">Schmeckt exakt wie das Eis aus deiner Kindheit. Nostalgie pur!</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Vanillesirup</li>
+              <li>Zitronensaft</li>
+              <li>Maracujasaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="long-island-ice-tea">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/LongIslandIceTea.JPG.webp" alt="Long Island Ice Tea" />
+          <div class="card-body">
+            <h3 class="card-title">Long Island Ice Tea</h3>
+            <p class="card-note">Der ultimative Mix. Fünf verschiedene Spirituosen vereint mit spritziger Zitrone, Orange und einem Schuss Cola für einen intensiven, legendären Drink.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Rum</li>
+              <li>Tequila</li>
+              <li>Gin</li>
+              <li>Triple Sec</li>
+              <li>Zitronensaft</li>
+              <li>Lime juice</li>
+              <li>Orangensaft</li>
+              <li>Cola</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">koffeinhaltig</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="moscow-mule">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/MoscowMule.JPG.webp" alt="Moscow Mule" />
+          <div class="card-body">
+            <h3 class="card-title">Moscow Mule</h3>
+            <p class="card-note">Scharfer Klassiker. Vodka und Limette mit dem feurigen Kick von Ginger Beer.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Limette</li>
+              <li>Ginger Beer</li>
+              <li>Gurke</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="mojito">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/mojito.JPG.webp" alt="Mojito" />
+          <div class="card-body">
+            <h3 class="card-title">Mojito</h3>
+            <p class="card-note">Karibischer Frischekick. Spritzige Limette, viel frische Minze und weißer Rum. Der ultimative Durstlöscher für lange Sommernächte.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rum</li>
+              <li>Limette</li>
+              <li>Minze</li>
+              <li>Rohrzucker</li>
+              <li>Sprudelwasser</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">enthält Zitrusfrüchte</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="caipirinha">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Caipirinha.webp" alt="Caipirinha" />
+          <div class="card-body">
+            <h3 class="card-title">Caipirinha</h3>
+            <p class="card-note">Brasilianisches Temperament. Frische Limetten und feiner Rohrzucker treffen auf kräftigen Cachaça.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Cachaça</li>
+              <li>Limette</li>
+              <li>Rohrzucker</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">enthält Zitrusfrüchte</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="cuba-libre">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/CubaLibre.webp" alt="Cuba Libre" />
+          <div class="card-body">
+            <h3 class="card-title">Cuba Libre</h3>
+            <p class="card-note">Mehr als nur Rum-Cola – mit frischer Limette für den extra Kick.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rum</li>
+              <li>Limette</li>
+              <li>Cola</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Koffeinhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="tequila-sunrise">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Tequila-SUnrise.webp" alt="Tequila Sunrise" />
+          <div class="card-body">
+            <h3 class="card-title">Tequila Sunrise</h3>
+            <p class="card-note">Urlaub pur. Tequila, Orangensaft und Grenadine zaubern den Sonnenaufgang ins Glas.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Tequila</li>
+              <li>Orangensaft</li>
+              <li>Zitrone</li>
+              <li>Grenadine</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="sex-on-the-beach">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/SexontheBeach.JPG.webp" alt="Sex on the Beach" />
+          <div class="card-body">
+            <h3 class="card-title">Sex on the Beach</h3>
+            <p class="card-note">Der Inbegriff von Urlaubs-Party. Pfirsich trifft auf Orange und Cranberry.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Pfirsichlikör</li>
+              <li>Zitrone</li>
+              <li>Grenadine</li>
+              <li>Cranberrysaft</li>
+              <li>Orangensaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="touchdown">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=300&q=80" alt="Touchdown" />
+          <div class="card-body">
+            <h3 class="card-title">Touchdown</h3>
+            <p class="card-note">Vodka und Apricot Brandy mit Zitrone und Maracuja. Ein süffiger Volltreffer.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Pfirsichlikör</li>
+              <li>Zitrone</li>
+              <li>Grenadine</li>
+              <li>Maracujasaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="PARTY-FAVORITES" data-drink-id="paloma">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Paloma.JPG.webp" alt="Paloma" />
+          <div class="card-body">
+            <h3 class="card-title">Paloma</h3>
+            <p class="card-note">Tequila und herbe Grapefruit-Limo mit einem Hauch Salz. Spritzig, wild und der perfekte Durstlöscher für heiße Tage.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Tequila</li>
+              <li>Limettensaft</li>
+              <li>Grapefruit Limonade</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">enthält Zitrusfrüchte</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,00€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="MAIN-CHARACTER-ENERGY" data-drink-id="pornstar-martini">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/PornstarMartini.JPG.webp" alt="Pornstar Martini" />
+          <div class="card-body">
+            <h3 class="card-title">Pornstar Martini</h3>
+            <p class="card-note">Vanille-Vodka und Passionsfrucht treffen auf einen prickelnden Shot Prosecco. Glamourös, fruchtig und der absolute Star jeder Nacht.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Passionsfruchtlikör</li>
+              <li>Zitrone</li>
+              <li>Vanillesirup</li>
+              <li>Sekt (zusätzlich)</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">Säurungsmittel</span>
+              <span class="chip">Sulfite</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="MAIN-CHARACTER-ENERGY" data-drink-id="espresso-martini">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/EspressoMartini.webp" alt="Espresso Martini" />
+          <div class="card-body">
+            <h3 class="card-title">Espresso Martini</h3>
+            <p class="card-note">Wachmacher mit Stil. Kräftiger Espresso und Vodka sorgen für den ultimativen Koffein-Kick.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Vodka</li>
+              <li>Kaffeelikör</li>
+              <li>Espresso</li>
+              <li>Zucker</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">koffeinhaltig</span>
+              <span class="chip">Farbstoff</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">9,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="MAIN-CHARACTER-ENERGY" data-drink-id="margarita">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Margharita.JPG.webp" alt="Margarita" />
+          <div class="card-body">
+            <h3 class="card-title">Margarita</h3>
+            <p class="card-note">Tequila, Salz und Limette. Der Inbegriff von Party-Eleganz.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Tequila</li>
+              <li>Limette</li>
+              <li>Triple Sec</li>
+              <li>Zucker</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholhaltig</span>
+              <span class="chip">enthält Zitrusfrüchte</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">8,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="ZERO-PROOF" data-drink-id="ipanema">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Ipanema.JPG.webp" alt="Ipanema" />
+          <div class="card-body">
+            <h3 class="card-title">Ipanema</h3>
+            <p class="card-note">Die alkoholfreie Caipi-Alternative mit Ginger Ale.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Rohrzucker</li>
+              <li>Limette</li>
+              <li>Maracujasaft</li>
+              <li>Ginger Ale</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholfrei</span>
+              <span class="chip">enthält Zitrusfrüchte</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">6,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="ZERO-PROOF" data-drink-id="maracuja-mule">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/MaracujaMule.JPG.webp" alt="Maracuja Mule" />
+          <div class="card-body">
+            <h3 class="card-title">Maracuja Mule</h3>
+            <p class="card-note">Spritzig, scharf und fruchtig – ohne den Alkohol-Flash.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Limette</li>
+              <li>Maracujasaft</li>
+              <li>Ginger Beer</li>
+              <li>Mango Sirup</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholfrei</span>
+              <span class="chip">Säurungsmittel</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">6,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="ZERO-PROOF" data-drink-id="virgin-colada">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/Pinia_Colada.JPG.webp" alt="Virgin Colada" />
+          <div class="card-body">
+            <h3 class="card-title">Virgin Colada</h3>
+            <p class="card-note">Sanfte Kokosnuss und fruchtige Ananas im Mix. Cremiges Strandfeeling im Glas – ganz ohne Umdrehungen.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Sahne</li>
+              <li>Kokossirup</li>
+              <li>Ananassaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholfrei</span>
+              <span class="chip">Sahne (Milchprodukt)</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">6,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card active-display" data-category="ZERO-PROOF" data-drink-id="miami">
+        <button class="card-toggle" type="button">
+          <img class="card-image" src="webp/SexontheBeach.JPG.webp" alt="Miami" />
+          <div class="card-body">
+            <h3 class="card-title">Miami</h3>
+            <p class="card-note">Fruchtig, leicht süß und erfrischend – der Miami Cocktail erinnert mit seinen Zitrus- und Tropennoten an einen Sonnenuntergang am Strand.</p>
+          </div>
+          <div class="card-arrow">▾</div>
+        </button>
+        <div class="dropdown">
+          <div>
+            <p class="section-title">Zutaten</p>
+            <ul class="ingredients">
+              <li>Grenadine</li>
+              <li>Zitronensaft</li>
+              <li>Orangensaft</li>
+              <li>Ananassaft</li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-title">Inhaltsstoffe</p>
+            <div class="chips">
+              <span class="chip">alkoholfrei</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-label">Preis</span>
+              <span class="price">6,50€</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alkohol</span>
+              <div class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fruchtig</span>
+              <div class="stars">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">Sprecht uns gerne bei Fragen oder Anregungen an, wir versuchen auf Wünsche einzugehen</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
