@@ -874,7 +874,7 @@
         alcoholVolume: "ca. 16 % vol",
         image: "garnish/whiskeySourGarnish.webp",
         batchBaseMl: 150,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"], // Nur Konzentrat
         ingredients: [
           { amount: 5, unit: "cl", name: "Whiskey (Standard: Jim Beam)" },
@@ -898,7 +898,7 @@
         alcoholVolume: "ca. 17 % vol",
         image: "garnish/NewYorkSourGarnish.JPG.webp",
         batchBaseMl: 140,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "Whiskey (Standard: Jim Beam)" },
@@ -922,7 +922,7 @@
         alcoholVolume: "ca. 18 % vol",
         image: "garnish/PiscoSour.webp",
         batchBaseMl: 150,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 6, unit: "cl", name: "Pisco" },
@@ -1064,7 +1064,7 @@
         alcoholVolume: "ca. 9 % vol",
         image: "garnish/pinia_colada_garnish.JPG.webp",
         batchBaseMl: 170,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard", "slush"],
         dilution: 0.25,
         ingredients: [
@@ -1160,7 +1160,7 @@
         image: "garnish/Negroni_garnish.JPG.webp",
         batchBaseMl: 90,
         batchable: true,
-        batchModes: ["standard", "tap"],
+        batchModes: ["standart", "tap"],
         dilution: 0.25,
         ingredients: [
           { amount: 3, unit: "cl", name: "Gin" },
@@ -1225,7 +1225,7 @@
         image: "garnish/LongIslandIceTeaGarnish.JPG.webp",
         batchBaseMl: 190,
         batchable: true,
-        batchModes: ["standard", "tap"],
+        batchModes: ["standard"],
         dilution: 0.20,
         ingredients: [
           { amount: 7, unit: "cl", name: "Vormischung" },
@@ -1250,7 +1250,7 @@
         alcoholVolume: "ca. 10 % vol",
         image: "garnish/MoscowMuleGarnish.JPG.webp",
         batchBaseMl: 155,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "Vodka" },
@@ -1272,7 +1272,7 @@
         alcoholVolume: "ca. 11 % vol",
         image: "garnish/MojitoGarnish.JPG.webp",
         batchBaseMl: 170,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "weißer Rum" },
@@ -1298,7 +1298,7 @@
         alcoholVolume: "ca. 14 % vol",
         image: "garnish/CaipirinhaGarnish.webp",
         batchBaseMl: 120,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "Cachaça" },
@@ -1321,7 +1321,7 @@
         alcoholVolume: "ca. 10 % vol",
         image: "garnish/CubaLibreGarnish.webp",
         batchBaseMl: 160,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "Rum" },
@@ -1344,7 +1344,7 @@
         image: "garnish/TequilaSUnriseGarnish.webp",
         batchBaseMl: 170,
         batchable: true,
-        batchModes: ["standard", "tap", "slush"],
+        batchModes: ["standard", "slush"],
         dilution: 0.20,
         ingredients: [
           { amount: 5, unit: "cl", name: "Tequila" },
@@ -1414,7 +1414,7 @@
         alcoholVolume: "ca. 10 % vol",
         image: "garnish/PalomaGarnish.JPG.webp",
         batchBaseMl: 170,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 5, unit: "cl", name: "Tequila" },
@@ -1506,7 +1506,7 @@
         alcoholVolume: "0,0 % vol",
         image: "garnish/Ipanemagarnish.JPG.webp",
         batchBaseMl: 180,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard"],
         ingredients: [
           { amount: 2, unit: "barspoon", name: "Rohrzucker" },
@@ -1552,7 +1552,7 @@
         alcoholVolume: "0,0 % vol",
         image: "https://images.pexels.com/photos/10986589/pexels-photo-10986589.jpeg",
         batchBaseMl: 150,
-        batchable: true,
+        batchable: false,
         batchModes: ["standard", "slush"],
         dilution: 0.25,
         ingredients: [
@@ -1565,7 +1565,28 @@
           "In ein Glas füllen.",
           "Servieren."
         ]
-      }
+      },
+
+      "Waldmeister-slush": {
+  title: "Waldmeister-Slush",
+  category: "BATCHES", 
+  batchBaseMl: 1000,
+  batchable: true,
+  batchModes: ["slush"], // Nur als Standard-Batch
+  batchOnly: true, // <-- DER NEUE SCHALTER
+  ingredients: [
+    { amount: 185, unit: "ml", name: "Vodka" },
+    { amount: 200, unit: "ml", name: "Waldmeistersirup" },
+    { amount: 30, unit: "ml", name: "Pulco" },
+    { amount: 585, unit: "ml", name: "Wasser" }
+  ],
+  steps: [
+    "7,4% Alkohol"
+    "Alles zusammenmischen und kalt stellen."
+  ]
+},
+
+      
     };
 
     // DOM Elemente
@@ -1906,9 +1927,9 @@
         const eveningBlocked = new Set([ "long-island", "mojito", "new-york-sour", "caipirinha", "negroni", "boulevardier", "martini"]);
 
         // Pools filtern
-        const allAlcs = Object.entries(recipes).filter(([id, r]) => r.category !== "Zero Proof" && !r.isSlushOnly);
+         const allAlcs = Object.entries(recipes).filter(([id, r]) => r.category !== "Zero Proof" && !r.isSlushOnly && !r.batchOnly);
         const hhPool = allAlcs.filter(([id]) => !happyHourBlocked.has(id));
-        const virgins = Object.entries(recipes).filter(([id, r]) => r.category === "Zero Proof" && !r.isSlushOnly);
+        const virgins = Object.entries(recipes).filter(([id, r]) => r.category === "Zero Proof" && !r.isSlushOnly && !r.batchOnly);
 
         if (hhPool.length < 3) return null;
 
@@ -2001,10 +2022,11 @@
     // Inhaltsliste Overlay
     if (openIngredientsBtn) {
         openIngredientsBtn.onclick = () => {
-            overlayTableBody.innerHTML = Object.values(recipes)
-                .sort((a, b) => a.title.localeCompare(b.title, "de"))
-                .map(r => `<tr><td>${r.title}</td><td>${r.ingredients.map(ingredientToText).join("\n")}</td></tr>`)
-                .join("");
+          overlayTableBody.innerHTML = Object.values(recipes)
+    .filter(r => !r.batchOnly) // <-- Filtert reine Batch-Rezepte heraus
+    .sort((a, b) => a.title.localeCompare(b.title, "de"))
+    .map(r => `<tr><td>${r.title}</td><td>${r.ingredients.map(ingredientToText).join("\n")}</td></tr>`)
+    .join("");
             overlay.classList.add("active");
         };
     }
