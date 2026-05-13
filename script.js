@@ -1,6 +1,7 @@
 const TIMEZONE = "Europe/Berlin";
 const ROTATION_START = "2026-04-27";
 
+const FORCE_SPECIAL_BUTTON = true; // Setze auf false, um es wieder zu deaktivieren
 const FOUR_WEEK_SPECIALS = [
   {
     happyHourAlcoholic: ["tequila-sunrise", "cuba-libre", "blue-lagoon"],
@@ -30,7 +31,7 @@ const MANUAL_EVENT_PRICE = "0,00€";
 const MANUAL_EVENT_COCKTAILS = [
   "espresso-martini",
   "solero",
-  "touchdown",
+  "tequila-sunrise",
   "cuba-libre"
 ];
 
@@ -393,7 +394,10 @@ function updateSpecialButtonVisibility() {
 
   if (!button) return;
 
-  button.style.display = areSpecialsVisible() ? "inline-block" : "none";
+  // Zeigt den Button bei regulären Zeiten, oder wenn FORCE_SPECIAL_BUTTON true ist
+  const shouldShow = areSpecialsVisible() || FORCE_SPECIAL_BUTTON;
+
+  button.style.display = shouldShow ? "inline-block" : "none";
 }
 
 function restoreOriginalPrices(cards) {
